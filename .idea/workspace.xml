@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02777398-98fb-465c-be91-e348412b1921" name="默认更改列表" comment="完成1.0版本">
+    <list default="true" id="02777398-98fb-465c-be91-e348412b1921" name="默认更改列表" comment="添加README">
+      <change afterPath="$PROJECT_DIR$/lib/swing-layout-javadoc.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/swing-layout-src.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/swing-layout.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileFiliter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Get.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainFrame.jfd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/form.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/JudgeSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JudgeSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -44,9 +69,17 @@
     <property name="project.structure.last.edited" value="模块" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="FileFiliter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FileFiliter" />
+      <module name="ElectronicnvoiceAssistant" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ElectronicnvoiceAssistant" />
@@ -61,9 +94,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test" />
+      <module name="ElectronicnvoiceAssistant" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.FileFiliter" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.T" />
       </list>
     </recent_temporary>
@@ -92,7 +134,12 @@
       <updated>1596275975152</updated>
       <workItem from="1596275976873" duration="3227000" />
       <workItem from="1596383997810" duration="335000" />
-      <workItem from="1596384400351" duration="9858000" />
+      <workItem from="1596384400351" duration="10493000" />
+      <workItem from="1596697940230" duration="794000" />
+      <workItem from="1596700127086" duration="37000" />
+      <workItem from="1596700201925" duration="596000" />
+      <workItem from="1596703554437" duration="460000" />
+      <workItem from="1596704309451" duration="9782000" />
     </task>
     <task id="LOCAL-00001" summary="完成1.0版本">
       <created>1596630722580</created>
@@ -101,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596630722581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加README">
+      <created>1596631322560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596631322560</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,70 +163,83 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成1.0版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成1.0版本" />
+    <MESSAGE value="添加README" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加README" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#项目结构" timestamp="1596389528992">
+    <state x="320" y="115" key="#项目结构" timestamp="1596703690910">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="115" key="#项目结构/0.0.1440.900@0.0.1440.900" timestamp="1596389528992" />
-    <state x="263" y="50" key="CommitChangelistDialog2" timestamp="1596631300048">
+    <state x="320" y="115" key="#项目结构/0.0.1440.900@0.0.1440.900" timestamp="1596703690910" />
+    <state x="475" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596783875145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="263" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596631300048" />
+    <state x="475" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1596783875145" />
+    <state x="263" y="50" key="CommitChangelistDialog2" timestamp="1596783950625">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="263" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596783950625" />
     <state x="523" y="373" key="Github.CreateGistDialog" timestamp="1596630468100">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="523" y="373" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1596630468100" />
-    <state width="699" height="237" key="GridCell.Tab.0.bottom" timestamp="1596630656634">
+    <state width="1398" height="294" key="GridCell.Tab.0.bottom" timestamp="1596783950666">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="237" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596630656634" />
-    <state width="1398" height="237" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596392092358" />
-    <state width="699" height="237" key="GridCell.Tab.0.center" timestamp="1596630656632">
+    <state width="1398" height="294" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596783950666" />
+    <state width="1398" height="294" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596721101524" />
+    <state width="1398" height="294" key="GridCell.Tab.0.center" timestamp="1596783950664">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="237" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596630656632" />
-    <state width="1398" height="237" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1596392092356" />
-    <state width="699" height="237" key="GridCell.Tab.0.left" timestamp="1596630656631">
+    <state width="1398" height="294" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596783950664" />
+    <state width="1398" height="294" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1596721101521" />
+    <state width="1398" height="294" key="GridCell.Tab.0.left" timestamp="1596783950663">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="237" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596630656631" />
-    <state width="1398" height="237" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1596392092355" />
-    <state width="699" height="237" key="GridCell.Tab.0.right" timestamp="1596630656633">
+    <state width="1398" height="294" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596783950663" />
+    <state width="1398" height="294" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1596721101518" />
+    <state width="1398" height="294" key="GridCell.Tab.0.right" timestamp="1596783950665">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="699" height="237" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596630656633" />
-    <state width="1398" height="237" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1596392092357" />
-    <state width="1398" height="294" key="GridCell.Tab.1.bottom" timestamp="1596390640301">
+    <state width="1398" height="294" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596783950665" />
+    <state width="1398" height="294" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1596721101523" />
+    <state width="1398" height="294" key="GridCell.Tab.1.bottom" timestamp="1596783950670">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596390640301" />
-    <state width="1398" height="294" key="GridCell.Tab.1.center" timestamp="1596390640300">
+    <state width="1398" height="294" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596783950670" />
+    <state width="1398" height="294" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596721100907" />
+    <state width="1398" height="294" key="GridCell.Tab.1.center" timestamp="1596783950668">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596390640300" />
-    <state width="1398" height="294" key="GridCell.Tab.1.left" timestamp="1596390640299">
+    <state width="1398" height="294" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596783950668" />
+    <state width="1398" height="294" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1596721100905" />
+    <state width="1398" height="294" key="GridCell.Tab.1.left" timestamp="1596783950667">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596390640299" />
-    <state width="1398" height="294" key="GridCell.Tab.1.right" timestamp="1596390640300">
+    <state width="1398" height="294" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596783950667" />
+    <state width="1398" height="294" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1596721100905" />
+    <state width="1398" height="294" key="GridCell.Tab.1.right" timestamp="1596783950669">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596390640300" />
+    <state width="1398" height="294" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596783950669" />
+    <state width="1398" height="294" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1596721100906" />
     <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1596384220007">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="258" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1596384220007" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596630751138">
+    <state x="220" y="65" key="SettingsEditor" timestamp="1596700148176">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596630751138" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596630732387">
+    <state x="220" y="65" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1596700148176" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596631343359">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1596630732387" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596631343359" />
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596783918466">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1596783918466" />
     <state x="426" y="63" key="refactoring.ChangeSignatureDialog" timestamp="1596388763775">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
