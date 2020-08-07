@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02777398-98fb-465c-be91-e348412b1921" name="默认更改列表" comment="添加README">
-      <change afterPath="$PROJECT_DIR$/lib/swing-layout-javadoc.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/swing-layout-src.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/swing-layout.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FileFiliter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Get.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MainFrame.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/form.properties" afterDir="false" />
+    <list default="true" id="02777398-98fb-465c-be91-e348412b1921" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PrintWord.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JudgeSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JudgeSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileFiliter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileFiliter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Get.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Get.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JudgeSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JudgeSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFrame.jfd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/form.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/form.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +135,7 @@
       <workItem from="1596700127086" duration="37000" />
       <workItem from="1596700201925" duration="596000" />
       <workItem from="1596703554437" duration="460000" />
-      <workItem from="1596704309451" duration="9782000" />
+      <workItem from="1596704309451" duration="11846000" />
     </task>
     <task id="LOCAL-00001" summary="完成1.0版本">
       <created>1596630722580</created>
@@ -155,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596631322560</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="增加可视化界面">
+      <created>1596783966858</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596783966858</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,7 +167,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成1.0版本" />
     <MESSAGE value="添加README" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加README" />
+    <MESSAGE value="增加可视化界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加可视化界面" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -176,53 +180,53 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="475" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1596783875145" />
-    <state x="263" y="50" key="CommitChangelistDialog2" timestamp="1596783950625">
+    <state x="263" y="50" key="CommitChangelistDialog2" timestamp="1596783966303">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="263" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596783950625" />
+    <state x="263" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596783966303" />
     <state x="523" y="373" key="Github.CreateGistDialog" timestamp="1596630468100">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="523" y="373" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1596630468100" />
-    <state width="1398" height="294" key="GridCell.Tab.0.bottom" timestamp="1596783950666">
+    <state width="1398" height="255" key="GridCell.Tab.0.bottom" timestamp="1596785966921">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596783950666" />
+    <state width="1398" height="255" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596785966921" />
     <state width="1398" height="294" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596721101524" />
-    <state width="1398" height="294" key="GridCell.Tab.0.center" timestamp="1596783950664">
+    <state width="1398" height="255" key="GridCell.Tab.0.center" timestamp="1596785966919">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596783950664" />
+    <state width="1398" height="255" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596785966919" />
     <state width="1398" height="294" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1596721101521" />
-    <state width="1398" height="294" key="GridCell.Tab.0.left" timestamp="1596783950663">
+    <state width="1398" height="255" key="GridCell.Tab.0.left" timestamp="1596785966918">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596783950663" />
+    <state width="1398" height="255" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596785966918" />
     <state width="1398" height="294" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1596721101518" />
-    <state width="1398" height="294" key="GridCell.Tab.0.right" timestamp="1596783950665">
+    <state width="1398" height="255" key="GridCell.Tab.0.right" timestamp="1596785966920">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596783950665" />
+    <state width="1398" height="255" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596785966920" />
     <state width="1398" height="294" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1596721101523" />
-    <state width="1398" height="294" key="GridCell.Tab.1.bottom" timestamp="1596783950670">
+    <state width="1398" height="255" key="GridCell.Tab.1.bottom" timestamp="1596785966531">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596783950670" />
+    <state width="1398" height="255" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596785966531" />
     <state width="1398" height="294" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596721100907" />
-    <state width="1398" height="294" key="GridCell.Tab.1.center" timestamp="1596783950668">
+    <state width="1398" height="255" key="GridCell.Tab.1.center" timestamp="1596785966530">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596783950668" />
+    <state width="1398" height="255" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1596785966530" />
     <state width="1398" height="294" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1596721100905" />
-    <state width="1398" height="294" key="GridCell.Tab.1.left" timestamp="1596783950667">
+    <state width="1398" height="255" key="GridCell.Tab.1.left" timestamp="1596785966529">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596783950667" />
+    <state width="1398" height="255" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1596785966529" />
     <state width="1398" height="294" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1596721100905" />
-    <state width="1398" height="294" key="GridCell.Tab.1.right" timestamp="1596783950669">
+    <state width="1398" height="255" key="GridCell.Tab.1.right" timestamp="1596785966530">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596783950669" />
+    <state width="1398" height="255" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1596785966530" />
     <state width="1398" height="294" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1596721100906" />
     <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1596384220007">
       <screen x="0" y="0" width="1440" height="900" />
@@ -232,10 +236,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="220" y="65" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1596700148176" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596631343359">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596784054726">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596631343359" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596784054726" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596783918466">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

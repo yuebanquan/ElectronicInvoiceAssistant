@@ -1,5 +1,4 @@
 import java.io.File;
-import java.io.FileWriter;
 
 import javax.swing.JFileChooser;
 
@@ -20,4 +19,3 @@ public class FileFiliter {
         return selectedFile.getPath();
     }
 }
-

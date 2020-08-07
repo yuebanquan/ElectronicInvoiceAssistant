@@ -7,8 +7,6 @@ import com.spire.doc.fields.DocPicture;
 import java.io.File;
 
 public class Get {
-    //截图文件地址
-    String screenshotsPath;
 
     /**
      * 生成截图

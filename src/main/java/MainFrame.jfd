@@ -13,8 +13,8 @@ new FormModel {
 				name: "dialogPane"
 				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq t {space :p:10:p, par l {seq {comp label1:::p::p, space :::p, comp saveFilePathText:::p:265:p, space u:::p, comp setSaveFilePaht:::p::p, space :0:0:x}, seq {comp label2:::p::p, space :::p, comp filePathText:::::x, space :::p, comp setFilePaht:::p::p}}, space :::p}, seq l {space :::p, comp scrollPane1:::p:448:p, space :::x}}"
-					"$verticalGroup": "par l {seq l {space :::p, par b {comp setFilePaht::b:p::p, comp label2::b:p::p, comp filePathText::b:p::p}, space :::p, par b {comp label1::b:p::p, comp saveFilePathText::b:p::p, comp setSaveFilePaht::b:p::p}, space ::10:x, comp scrollPane1:::p:151:p, space :::p}}"
+					"$horizontalGroup": "par l {seq {par l {seq t {space :12::x, par l {seq l {comp label2:::p::p, space :::p, comp filePathText:::p:271:p, space u:::p, comp setFilePaht:::p:66:p}, seq l {comp label1:::p::p, space :::p, comp saveFilePathText:::p:271:p, space u:::p, comp setSaveFilePaht:::p:66:p}}, space :p:6:p}, seq {space :::p, par l {seq t {comp authorButton:::p::p, space ::200:x, comp okButton:::p:80:p, space :::p, comp printButton:::p:80:p}, comp scrollPane1::l::444:x}}}, space :::p}}"
+					"$verticalGroup": "par l {seq l {space :::p, par b {comp setFilePaht::b:p::p, comp filePathText::b:p::p, comp label2::b:p::p}, space :::p, par b {comp setSaveFilePaht::b:p::p, comp saveFilePathText::b:p::p, comp label1::b:p::p}, space :::p, comp scrollPane1::::248:x, space :::p, par b {comp okButton::b:p::p, comp printButton::b:p::p, comp authorButton::b:p::p}}}"
 				} ) {
 					name: "contentPanel"
 					add( new FormComponent( "javax.swing.JLabel" ) {
@@ -32,13 +32,6 @@ new FormModel {
 						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
 						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setFilePahtActionPerformed", true ) )
 					} )
-					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
-						name: "scrollPane1"
-						"toolTipText": "是"
-						add( new FormComponent( "javax.swing.JTextArea" ) {
-							name: "reminderTextArea"
-						} )
-					} )
 					add( new FormComponent( "javax.swing.JLabel" ) {
 						name: "label1"
 						"text": new FormMessage( null, "MainFrame.label1.text" )
@@ -53,15 +46,18 @@ new FormModel {
 						"text": new FormMessage( null, "MainFrame.setSaveFilePaht.text" )
 						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "setSaveFilePahtActionPerformed", true ) )
 					} )
-				}, new FormLayoutConstraints( class java.lang.String ) {
-					"value": "Center"
-				} )
-				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq t {space ::283:x, comp okButton:::p:80:p, space :5:5:p, comp printButton:::p:80:p, space :::p}}"
-					"$verticalGroup": "par l {seq l {space :::p, par l {comp okButton:::p::p, comp printButton:::p::p}, space ::10:x}}"
-				} ) {
-					name: "buttonBar"
-					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						"toolTipText": "是"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "reminderTextArea"
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "authorButton"
+						"text": new FormMessage( null, "MainFrame.authorButton.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "authorButtonActionPerformed", true ) )
+					} )
 					add( new FormComponent( "javax.swing.JButton" ) {
 						name: "okButton"
 						"text": new FormMessage( null, "MainFrame.okButton.text" )
@@ -73,14 +69,14 @@ new FormModel {
 						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "printButtonActionPerformed", true ) )
 					} )
 				}, new FormLayoutConstraints( class java.lang.String ) {
-					"value": "South"
+					"value": "Center"
 				} )
 			}, new FormLayoutConstraints( class java.lang.String ) {
 				"value": "Center"
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 480, 345 )
+			"size": new java.awt.Dimension( 480, 410 )
 		} )
 		add( new FormComponent( "javax.swing.JTextArea" ) {
 			name: "textArea1"

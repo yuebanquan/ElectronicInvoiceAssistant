@@ -29,44 +29,68 @@ public class MainFrame extends JFrame {
         reminderTextArea.append("**************************************\n");
     }
 
-    //点击"浏览"设定发票文件位置
+    /**
+     * 点击"浏览"设定发票文件位置
+     *
+     * @param e
+     */
     private void setFilePahtActionPerformed(ActionEvent e) {
         filePath = FileFiliter.getFile();
         filePathText.setText(filePath);
     }
 
-    //点击"浏览"设定生成文档位置
+    /**
+     * 点击"浏览"设定生成文档位置
+     *
+     * @param e
+     */
     private void setSaveFilePahtActionPerformed(ActionEvent e) {
         saveFilePath = FileFiliter.getFile();
         saveFilePathText.setText(saveFilePath);
     }
 
-
-    //点击"开始"
+    /**
+     * 点击"开始"
+     *
+     * @param e
+     */
     private void okButtonActionPerformed(ActionEvent e) {
 
-        if (filePath.equals("-1")) {    //未添加发票目录路径
-            reminderTextArea.append("请添加发票目录路径!\n");
+        if (filePath.equals("-1") && saveFilePath.equals("-1")) {    //未添加发票目录路径或生成文档路径
+            reminderTextArea.append("请添加发票目录路径和生成文档路径!\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
             reminderTextArea.append("**************************************\n");
-        } else if (saveFilePath.equals("-1")) {   //未添加生成文档路径
-            reminderTextArea.append("请添加生成文档路径!\n");
-            reminderTextArea.append("**************************************\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
         } else {
             //生成提示
             reminderTextArea.append("开始处理,生成截图......\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
 
             //生成截图
             Get.getScreenshots(filePath);
 
             //生成提示
             reminderTextArea.append("生成截图成功!\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
             reminderTextArea.append("截图路径为: " + filePath + JudgeSystem.getseparatrix() + "截图\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
             reminderTextArea.append("**************************************\n");
-            setForeground(Color.red);
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
             reminderTextArea.append("正在生成文档......\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
             reminderTextArea.append("文档生成成功!\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
             reminderTextArea.append("文档路径为: " + saveFilePath + "\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
             reminderTextArea.append("**************************************\n");
+            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
 
             //生成文档
             Get.getDoc(filePath, saveFilePath);
@@ -78,8 +102,36 @@ public class MainFrame extends JFrame {
         // TODO add your code here
     }
 
+    /**
+     * 点击"打印"
+     *
+     * @param e
+     */
     private void printButtonActionPerformed(ActionEvent e) {
-        // TODO add your code here
+        reminderTextArea.append("抱歉!功能暂未实现,请等待版本更新,谢谢!\n");
+        reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
+        reminderTextArea.append("**************************************\n");
+        reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+    }
+
+    /**
+     * 点击"作者"
+     *
+     * @param e
+     */
+    private void authorButtonActionPerformed(ActionEvent e) {
+        reminderTextArea.append("作者: yuebanquan\n");
+        reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
+        reminderTextArea.append("GitHub: https://github.com/yuebanquan\n");
+        reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
+        reminderTextArea.append("Blog: https://www.yuebanquan.xyz/\n");
+        reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+
+        reminderTextArea.append("**************************************\n");
+        reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
     }
 
 
@@ -91,12 +143,12 @@ public class MainFrame extends JFrame {
         label2 = new JLabel();
         filePathText = new JTextField();
         setFilePaht = new JButton();
-        scrollPane1 = new JScrollPane();
-        reminderTextArea = new JTextArea();
         label1 = new JLabel();
         saveFilePathText = new JTextField();
         setSaveFilePaht = new JButton();
-        buttonBar = new JPanel();
+        scrollPane1 = new JScrollPane();
+        reminderTextArea = new JTextArea();
+        authorButton = new JButton();
         okButton = new JButton();
         printButton = new JButton();
         textArea1 = new JTextArea();
@@ -135,12 +187,6 @@ public class MainFrame extends JFrame {
                     }
                 });
 
-                //======== scrollPane1 ========
-                {
-                    scrollPane1.setToolTipText("\u662f");
-                    scrollPane1.setViewportView(reminderTextArea);
-                }
-
                 //---- label1 ----
                 label1.setText(bundle.getString("MainFrame.label1.text"));
                 label1.setFont(new Font(".AppleSystemUIFont", Font.BOLD, 13));
@@ -156,55 +202,19 @@ public class MainFrame extends JFrame {
                     }
                 });
 
-                GroupLayout contentPanelLayout = new GroupLayout(contentPanel);
-                contentPanel.setLayout(contentPanelLayout);
-                contentPanelLayout.setHorizontalGroup(
-                        contentPanelLayout.createParallelGroup()
-                                .add(GroupLayout.TRAILING, contentPanelLayout.createSequentialGroup()
-                                        .add(10, 10, 10)
-                                        .add(contentPanelLayout.createParallelGroup()
-                                                .add(contentPanelLayout.createSequentialGroup()
-                                                        .add(label1)
-                                                        .addPreferredGap(LayoutStyle.RELATED)
-                                                        .add(saveFilePathText, GroupLayout.PREFERRED_SIZE, 265, GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(LayoutStyle.UNRELATED)
-                                                        .add(setSaveFilePaht)
-                                                        .add(0, 0, Short.MAX_VALUE))
-                                                .add(contentPanelLayout.createSequentialGroup()
-                                                        .add(label2)
-                                                        .addPreferredGap(LayoutStyle.RELATED)
-                                                        .add(filePathText)
-                                                        .addPreferredGap(LayoutStyle.RELATED)
-                                                        .add(setFilePaht)))
-                                        .addContainerGap())
-                                .add(contentPanelLayout.createSequentialGroup()
-                                        .addContainerGap()
-                                        .add(scrollPane1, GroupLayout.PREFERRED_SIZE, 448, GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                );
-                contentPanelLayout.setVerticalGroup(
-                        contentPanelLayout.createParallelGroup()
-                                .add(contentPanelLayout.createSequentialGroup()
-                                        .addContainerGap()
-                                        .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
-                                                .add(setFilePaht)
-                                                .add(label2)
-                                                .add(filePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(LayoutStyle.RELATED)
-                                        .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
-                                                .add(label1)
-                                                .add(saveFilePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                .add(setSaveFilePaht))
-                                        .addPreferredGap(LayoutStyle.RELATED, 10, Short.MAX_VALUE)
-                                        .add(scrollPane1, GroupLayout.PREFERRED_SIZE, 151, GroupLayout.PREFERRED_SIZE)
-                                        .addContainerGap())
-                );
-            }
-            dialogPane.add(contentPanel, BorderLayout.CENTER);
+                //======== scrollPane1 ========
+                {
+                    scrollPane1.setToolTipText("\u662f");
+                    scrollPane1.setViewportView(reminderTextArea);
+                }
 
-            //======== buttonBar ========
-            {
-                buttonBar.setBorder(new EmptyBorder(12, 0, 0, 0));
+                //---- authorButton ----
+                authorButton.setText(bundle.getString("MainFrame.authorButton.text"));
+                authorButton.addActionListener(new ActionListener() {
+                    public void actionPerformed(ActionEvent e) {
+                        authorButtonActionPerformed(e);
+                    }
+                });
 
                 //---- okButton ----
                 okButton.setText(bundle.getString("MainFrame.okButton.text"));
@@ -222,28 +232,63 @@ public class MainFrame extends JFrame {
                     }
                 });
 
-                GroupLayout buttonBarLayout = new GroupLayout(buttonBar);
-                buttonBar.setLayout(buttonBarLayout);
-                buttonBarLayout.setHorizontalGroup(
-                        buttonBarLayout.createParallelGroup()
-                                .add(GroupLayout.TRAILING, buttonBarLayout.createSequentialGroup()
-                                        .addContainerGap(283, Short.MAX_VALUE)
-                                        .add(okButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE)
-                                        .add(5, 5, 5)
-                                        .add(printButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE)
+                GroupLayout contentPanelLayout = new GroupLayout(contentPanel);
+                contentPanel.setLayout(contentPanelLayout);
+                contentPanelLayout.setHorizontalGroup(
+                        contentPanelLayout.createParallelGroup()
+                                .add(contentPanelLayout.createSequentialGroup()
+                                        .add(contentPanelLayout.createParallelGroup()
+                                                .add(GroupLayout.TRAILING, contentPanelLayout.createSequentialGroup()
+                                                        .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .add(contentPanelLayout.createParallelGroup()
+                                                                .add(contentPanelLayout.createSequentialGroup()
+                                                                        .add(label2)
+                                                                        .addPreferredGap(LayoutStyle.RELATED)
+                                                                        .add(filePathText, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+                                                                        .addPreferredGap(LayoutStyle.UNRELATED)
+                                                                        .add(setFilePaht, GroupLayout.PREFERRED_SIZE, 66, GroupLayout.PREFERRED_SIZE))
+                                                                .add(contentPanelLayout.createSequentialGroup()
+                                                                        .add(label1)
+                                                                        .addPreferredGap(LayoutStyle.RELATED)
+                                                                        .add(saveFilePathText, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+                                                                        .addPreferredGap(LayoutStyle.UNRELATED)
+                                                                        .add(setSaveFilePaht, GroupLayout.PREFERRED_SIZE, 66, GroupLayout.PREFERRED_SIZE)))
+                                                        .add(6, 6, 6))
+                                                .add(contentPanelLayout.createSequentialGroup()
+                                                        .addContainerGap()
+                                                        .add(contentPanelLayout.createParallelGroup()
+                                                                .add(GroupLayout.TRAILING, contentPanelLayout.createSequentialGroup()
+                                                                        .add(authorButton)
+                                                                        .addPreferredGap(LayoutStyle.RELATED, 200, Short.MAX_VALUE)
+                                                                        .add(okButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE)
+                                                                        .addPreferredGap(LayoutStyle.RELATED)
+                                                                        .add(printButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE))
+                                                                .add(scrollPane1, GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE))))
                                         .addContainerGap())
                 );
-                buttonBarLayout.setVerticalGroup(
-                        buttonBarLayout.createParallelGroup()
-                                .add(buttonBarLayout.createSequentialGroup()
+                contentPanelLayout.setVerticalGroup(
+                        contentPanelLayout.createParallelGroup()
+                                .add(contentPanelLayout.createSequentialGroup()
                                         .addContainerGap()
-                                        .add(buttonBarLayout.createParallelGroup()
+                                        .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
+                                                .add(setFilePaht)
+                                                .add(filePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                .add(label2))
+                                        .addPreferredGap(LayoutStyle.RELATED)
+                                        .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
+                                                .add(setSaveFilePaht)
+                                                .add(saveFilePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                .add(label1))
+                                        .addPreferredGap(LayoutStyle.RELATED)
+                                        .add(scrollPane1, GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                                        .addPreferredGap(LayoutStyle.RELATED)
+                                        .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
                                                 .add(okButton)
-                                                .add(printButton))
-                                        .addContainerGap(10, Short.MAX_VALUE))
+                                                .add(printButton)
+                                                .add(authorButton)))
                 );
             }
-            dialogPane.add(buttonBar, BorderLayout.SOUTH);
+            dialogPane.add(contentPanel, BorderLayout.CENTER);
         }
         contentPane.add(dialogPane, BorderLayout.CENTER);
         pack();
@@ -257,12 +302,12 @@ public class MainFrame extends JFrame {
     private JLabel label2;
     private JTextField filePathText;
     private JButton setFilePaht;
-    private JScrollPane scrollPane1;
-    private JTextArea reminderTextArea;
     private JLabel label1;
     private JTextField saveFilePathText;
     private JButton setSaveFilePaht;
-    private JPanel buttonBar;
+    private JScrollPane scrollPane1;
+    private JTextArea reminderTextArea;
+    private JButton authorButton;
     private JButton okButton;
     private JButton printButton;
     private JTextArea textArea1;
