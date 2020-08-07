@@ -4,7 +4,6 @@ import java.util.*;
 import javax.swing.*;
 import javax.swing.border.*;
 
-import com.sun.xml.internal.ws.server.ServerRtException;
 import org.jdesktop.layout.GroupLayout;
 import org.jdesktop.layout.LayoutStyle;
 /*
@@ -269,18 +268,20 @@ public class MainFrame extends JFrame {
                 contentPanelLayout.setVerticalGroup(
                         contentPanelLayout.createParallelGroup()
                                 .add(contentPanelLayout.createSequentialGroup()
-                                        .addContainerGap()
-                                        .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
-                                                .add(setFilePaht)
-                                                .add(filePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                .add(label2))
+                                        .add(contentPanelLayout.createParallelGroup()
+                                                .add(contentPanelLayout.createSequentialGroup()
+                                                        .addContainerGap()
+                                                        .add(label2))
+                                                .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
+                                                        .add(filePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .add(setFilePaht)))
                                         .addPreferredGap(LayoutStyle.RELATED)
                                         .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
                                                 .add(setSaveFilePaht)
                                                 .add(saveFilePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                                 .add(label1))
                                         .addPreferredGap(LayoutStyle.RELATED)
-                                        .add(scrollPane1, GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                                        .add(scrollPane1, GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
                                         .addPreferredGap(LayoutStyle.RELATED)
                                         .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
                                                 .add(okButton)

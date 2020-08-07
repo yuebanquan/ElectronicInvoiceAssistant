@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="GroupLayout">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/swing-layout.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/swing-layout-javadoc.zip!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/swing-layout-src.zip!/" />
+    </SOURCES>
+  </library>
+</component>
