@@ -6,9 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02777398-98fb-465c-be91-e348412b1921" name="默认更改列表" comment="生成jar">
+    <list default="true" id="02777398-98fb-465c-be91-e348412b1921" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +135,7 @@
       <workItem from="1596703554437" duration="460000" />
       <workItem from="1596704309451" duration="13573000" />
       <workItem from="1597318885794" duration="602000" />
-      <workItem from="1597320911365" duration="259000" />
+      <workItem from="1597320911365" duration="465000" />
     </task>
     <task id="LOCAL-00001" summary="完成1.0版本">
       <created>1596630722580</created>
@@ -173,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596787898499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改readme">
+      <created>1597321388520</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597321388520</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +209,8 @@
     <MESSAGE value="增加可视化界面" />
     <MESSAGE value="添加作者信息" />
     <MESSAGE value="生成jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="生成jar" />
+    <MESSAGE value="修改readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改readme" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -223,10 +230,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="475" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1596783875145" />
-    <state x="263" y="50" key="CommitChangelistDialog2" timestamp="1596787984151">
+    <state x="263" y="50" key="CommitChangelistDialog2" timestamp="1597321387973">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="263" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1596787984151" />
+    <state x="263" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1597321387973" />
     <state x="523" y="373" key="Github.CreateGistDialog" timestamp="1596630468100">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -279,10 +286,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="220" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1596786808690" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1596791036253">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1597321400460">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1596791036253" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1597321400460" />
     <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596783918466">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
