@@ -1,4 +1,4 @@
-JFDML JFormDesigner: "6.0.6.2.195" Java: "11.0.5" encoding: "UTF-8"
+JFDML JFormDesigner: "7.0.1.0.272" Java: "1.8.0_202-release" encoding: "UTF-8"
 
 new FormModel {
 	"i18n.autoExternalize": true
@@ -13,8 +13,8 @@ new FormModel {
 				name: "dialogPane"
 				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-					"$horizontalGroup": "par l {seq {par l {seq t {space :12::x, par l {seq l {comp label2:::p::p, space :::p, comp filePathText:::p:271:p, space u:::p, comp setFilePaht:::p:66:p}, seq l {comp label1:::p::p, space :::p, comp saveFilePathText:::p:271:p, space u:::p, comp setSaveFilePaht:::p:66:p}}, space :p:6:p}, seq {space :::p, par l {seq t {comp authorButton:::p::p, space ::200:x, comp okButton:::p:80:p, space :::p, comp printButton:::p:80:p}, comp scrollPane1::l::444:x}}}, space :::p}}"
-					"$verticalGroup": "par l {seq l {par l {seq {space :::p, comp label2:::p::p}, par b:l {comp filePathText::b:p::p, comp setFilePaht::b:p::p}}, space :::p, par b {comp setSaveFilePaht::b:p::p, comp saveFilePathText::b:p::p, comp label1::b:p::p}, space :::p, comp scrollPane1::::254:x, space :::p, par b {comp okButton::b:p::p, comp printButton::b:p::p, comp authorButton::b:p::p}}}"
+					"$horizontalGroup": "par l {seq {par l {seq t {space :12::x, par l {seq l {comp label2:::p::p, space :::p, comp filePathText:::p:271:p, space u:::p, comp setFilePaht:::p:66:p}, seq l {comp label1:::p::p, space :::p, comp saveFilePathText:::p:271:p, space u:::p, comp setSaveFilePaht:::p:66:p}}, space :p:6:p}, seq {space :::p, par l {seq t {comp authorButton:::p::p, space ::205:x, comp okButton:::p:80:p, space :::p, comp printButton:::p:80:p}, comp scrollPane1::l::449:x}}}, space :::p}}"
+					"$verticalGroup": "par l {seq l {par l {seq {space :::p, comp label2:::p::p}, par b:l {comp filePathText::b:p::p, comp setFilePaht::b:p::p}}, space :::p, par b {comp setSaveFilePaht::b:p::p, comp saveFilePathText::b:p::p, comp label1::b:p::p}, space :::p, comp scrollPane1::::244:x, space :::p, par b {comp okButton::b:p::p, comp printButton::b:p::p, comp authorButton::b:p::p}}}"
 				} ) {
 					name: "contentPanel"
 					add( new FormComponent( "javax.swing.JLabel" ) {

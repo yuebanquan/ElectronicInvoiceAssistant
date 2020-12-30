@@ -1,11 +1,10 @@
-import java.awt.*;
-import java.awt.event.*;
-import java.util.*;
 import javax.swing.*;
-import javax.swing.border.*;
-
-import org.jdesktop.layout.GroupLayout;
-import org.jdesktop.layout.LayoutStyle;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.ResourceBundle;
 /*
  * Created by JFormDesigner on Thu Aug 06 16:59:16 CST 2020
  */
@@ -180,11 +179,7 @@ public class MainFrame extends JFrame {
                         button1MouseClicked(e);
                     }
                 });
-                setFilePaht.addActionListener(new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        setFilePahtActionPerformed(e);
-                    }
-                });
+                setFilePaht.addActionListener(e -> setFilePahtActionPerformed(e));
 
                 //---- label1 ----
                 label1.setText(bundle.getString("MainFrame.label1.text"));
@@ -195,11 +190,7 @@ public class MainFrame extends JFrame {
 
                 //---- setSaveFilePaht ----
                 setSaveFilePaht.setText(bundle.getString("MainFrame.setSaveFilePaht.text"));
-                setSaveFilePaht.addActionListener(new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        setSaveFilePahtActionPerformed(e);
-                    }
-                });
+                setSaveFilePaht.addActionListener(e -> setSaveFilePahtActionPerformed(e));
 
                 //======== scrollPane1 ========
                 {
@@ -209,84 +200,72 @@ public class MainFrame extends JFrame {
 
                 //---- authorButton ----
                 authorButton.setText(bundle.getString("MainFrame.authorButton.text"));
-                authorButton.addActionListener(new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        authorButtonActionPerformed(e);
-                    }
-                });
+                authorButton.addActionListener(e -> authorButtonActionPerformed(e));
 
                 //---- okButton ----
                 okButton.setText(bundle.getString("MainFrame.okButton.text"));
-                okButton.addActionListener(new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        okButtonActionPerformed(e);
-                    }
-                });
+                okButton.addActionListener(e -> okButtonActionPerformed(e));
 
                 //---- printButton ----
                 printButton.setText(bundle.getString("MainFrame.printButton.text"));
-                printButton.addActionListener(new ActionListener() {
-                    public void actionPerformed(ActionEvent e) {
-                        printButtonActionPerformed(e);
-                    }
-                });
+                printButton.addActionListener(e -> printButtonActionPerformed(e));
 
                 GroupLayout contentPanelLayout = new GroupLayout(contentPanel);
                 contentPanel.setLayout(contentPanelLayout);
                 contentPanelLayout.setHorizontalGroup(
                         contentPanelLayout.createParallelGroup()
-                                .add(contentPanelLayout.createSequentialGroup()
-                                        .add(contentPanelLayout.createParallelGroup()
-                                                .add(GroupLayout.TRAILING, contentPanelLayout.createSequentialGroup()
+                                .addGroup(contentPanelLayout.createSequentialGroup()
+                                        .addGroup(contentPanelLayout.createParallelGroup()
+                                                .addGroup(GroupLayout.Alignment.TRAILING, contentPanelLayout.createSequentialGroup()
                                                         .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                        .add(contentPanelLayout.createParallelGroup()
-                                                                .add(contentPanelLayout.createSequentialGroup()
-                                                                        .add(label2)
-                                                                        .addPreferredGap(LayoutStyle.RELATED)
-                                                                        .add(filePathText, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
-                                                                        .addPreferredGap(LayoutStyle.UNRELATED)
-                                                                        .add(setFilePaht, GroupLayout.PREFERRED_SIZE, 66, GroupLayout.PREFERRED_SIZE))
-                                                                .add(contentPanelLayout.createSequentialGroup()
-                                                                        .add(label1)
-                                                                        .addPreferredGap(LayoutStyle.RELATED)
-                                                                        .add(saveFilePathText, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
-                                                                        .addPreferredGap(LayoutStyle.UNRELATED)
-                                                                        .add(setSaveFilePaht, GroupLayout.PREFERRED_SIZE, 66, GroupLayout.PREFERRED_SIZE)))
-                                                        .add(6, 6, 6))
-                                                .add(contentPanelLayout.createSequentialGroup()
+                                                        .addGroup(contentPanelLayout.createParallelGroup()
+                                                                .addGroup(contentPanelLayout.createSequentialGroup()
+                                                                        .addComponent(label2)
+                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                        .addComponent(filePathText, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                        .addComponent(setFilePaht, GroupLayout.PREFERRED_SIZE, 66, GroupLayout.PREFERRED_SIZE))
+                                                                .addGroup(contentPanelLayout.createSequentialGroup()
+                                                                        .addComponent(label1)
+                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                        .addComponent(saveFilePathText, GroupLayout.PREFERRED_SIZE, 271, GroupLayout.PREFERRED_SIZE)
+                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                        .addComponent(setSaveFilePaht, GroupLayout.PREFERRED_SIZE, 66, GroupLayout.PREFERRED_SIZE)))
+                                                        .addGap(6, 6, 6))
+                                                .addGroup(contentPanelLayout.createSequentialGroup()
                                                         .addContainerGap()
-                                                        .add(contentPanelLayout.createParallelGroup()
-                                                                .add(GroupLayout.TRAILING, contentPanelLayout.createSequentialGroup()
-                                                                        .add(authorButton)
-                                                                        .addPreferredGap(LayoutStyle.RELATED, 200, Short.MAX_VALUE)
-                                                                        .add(okButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE)
-                                                                        .addPreferredGap(LayoutStyle.RELATED)
-                                                                        .add(printButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE))
-                                                                .add(scrollPane1, GroupLayout.DEFAULT_SIZE, 444, Short.MAX_VALUE))))
+                                                        .addGroup(contentPanelLayout.createParallelGroup()
+                                                                .addGroup(GroupLayout.Alignment.TRAILING, contentPanelLayout.createSequentialGroup()
+                                                                        .addComponent(authorButton)
+                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 205, Short.MAX_VALUE)
+                                                                        .addComponent(okButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE)
+                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                                        .addComponent(printButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE))
+                                                                .addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE))))
                                         .addContainerGap())
                 );
                 contentPanelLayout.setVerticalGroup(
                         contentPanelLayout.createParallelGroup()
-                                .add(contentPanelLayout.createSequentialGroup()
-                                        .add(contentPanelLayout.createParallelGroup()
-                                                .add(contentPanelLayout.createSequentialGroup()
+                                .addGroup(contentPanelLayout.createSequentialGroup()
+                                        .addGroup(contentPanelLayout.createParallelGroup()
+                                                .addGroup(contentPanelLayout.createSequentialGroup()
                                                         .addContainerGap()
-                                                        .add(label2))
-                                                .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
-                                                        .add(filePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                        .add(setFilePaht)))
-                                        .addPreferredGap(LayoutStyle.RELATED)
-                                        .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
-                                                .add(setSaveFilePaht)
-                                                .add(saveFilePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                                .add(label1))
-                                        .addPreferredGap(LayoutStyle.RELATED)
-                                        .add(scrollPane1, GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
-                                        .addPreferredGap(LayoutStyle.RELATED)
-                                        .add(contentPanelLayout.createParallelGroup(GroupLayout.BASELINE)
-                                                .add(okButton)
-                                                .add(printButton)
-                                                .add(authorButton)))
+                                                        .addComponent(label2))
+                                                .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(filePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(setFilePaht)))
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                                .addComponent(setSaveFilePaht)
+                                                .addComponent(saveFilePathText, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(label1))
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                                .addComponent(okButton)
+                                                .addComponent(printButton)
+                                                .addComponent(authorButton)))
                 );
             }
             dialogPane.add(contentPanel, BorderLayout.CENTER);
