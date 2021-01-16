@@ -1,4 +1,4 @@
-# ElectronicnvoiceAssistant（电子发票助手）
+# ElectronicInvoiceAssistant（电子发票助手）
 
 ### 一、功能点
 
