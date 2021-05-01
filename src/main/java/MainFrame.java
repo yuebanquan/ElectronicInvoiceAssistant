@@ -61,37 +61,54 @@ public class MainFrame extends JFrame {
             reminderTextArea.append("**************************************\n");
             reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
         } else {
+            //关闭各个按钮
+            okButton.setEnabled(false);     //关闭"开始"按钮
+            printButton.setEnabled(false);  //关闭"打印"按钮
+            authorButton.setEnabled(false); //关闭"作者"按钮
+            setFilePaht.setEnabled(false); //关闭"浏览"按钮
+            setSaveFilePaht.setEnabled(false); //关闭"浏览"按钮
+            setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);   //恢复关闭
+
             //生成提示
-            reminderTextArea.append("开始处理,生成截图......\n");
+            reminderTextArea.append("开始处理,生成截图......\n" +
+                    "请勿进行其他操作！！！");
             reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
 
-            //生成截图
-            Get.getScreenshots(filePath);
+            //防止UI假死
+            new Thread() {
+                @Override
+                public void run() {
+                    super.run();
+                    //生成截图
+                    Get.getScreenshots(filePath);
+                    //生成提示
+                    reminderTextArea.append("生成截图成功!\n" +
+                            "截图路径为: " + filePath + JudgeSystem.getseparatrix() + "截图\n" +
+                            "**************************************\n" +
+                            "正在生成文档......\n" +
+                            "请勿进行其他操作！！！");
+                    reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
 
-            //生成提示
-            reminderTextArea.append("生成截图成功!\n");
-            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+                    //生成文档
+                    Get.getDoc(filePath, saveFilePath);
 
-            reminderTextArea.append("截图路径为: " + filePath + JudgeSystem.getseparatrix() + "截图\n");
-            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+                    //生成提示
+                    reminderTextArea.append("文档生成成功!\n" +
+                            "文档路径为: " + saveFilePath + "\n" +
+                            "**************************************\n"
+                    );
+                    reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
 
-            reminderTextArea.append("**************************************\n");
-            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
+                    //开启各个按钮
+                    okButton.setEnabled(true);     //关闭"开始"按钮
+                    printButton.setEnabled(true);  //关闭"打印"按钮
+                    authorButton.setEnabled(true); //关闭"作者"按钮
+                    setFilePaht.setEnabled(true); //关闭"浏览"按钮
+                    setSaveFilePaht.setEnabled(true); //关闭"浏览"按钮
+                    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                }
+            }.start();
 
-            reminderTextArea.append("正在生成文档......\n");
-            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
-
-            reminderTextArea.append("文档生成成功!\n");
-            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
-
-            reminderTextArea.append("文档路径为: " + saveFilePath + "\n");
-            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
-
-            reminderTextArea.append("**************************************\n");
-            reminderTextArea.setCaretPosition(reminderTextArea.getDocument().getLength());
-
-            //生成文档
-            Get.getDoc(filePath, saveFilePath);
         }
 
     }
@@ -151,8 +168,11 @@ public class MainFrame extends JFrame {
         printButton = new JButton();
         textArea1 = new JTextArea();
 
-        //======== this ========
-        setTitle("\u7535\u5b50\u53d1\u7968\u6253\u5370\u52a9\u624b");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//关闭有效
+
+        //======== this =====setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);//关闭有效==
+        setTitle("\u7535\u5b50\u53d1\u7968\u52a9\u624b");
+        setResizable(false);
         Container contentPane = getContentPane();
         contentPane.setLayout(new BorderLayout());
 
@@ -237,11 +257,11 @@ public class MainFrame extends JFrame {
                                                         .addGroup(contentPanelLayout.createParallelGroup()
                                                                 .addGroup(GroupLayout.Alignment.TRAILING, contentPanelLayout.createSequentialGroup()
                                                                         .addComponent(authorButton)
-                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 205, Short.MAX_VALUE)
+                                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
                                                                         .addComponent(okButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE)
                                                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                                                                         .addComponent(printButton, GroupLayout.PREFERRED_SIZE, 80, GroupLayout.PREFERRED_SIZE))
-                                                                .addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 449, Short.MAX_VALUE))))
+                                                                .addComponent(scrollPane1, GroupLayout.DEFAULT_SIZE, 443, Short.MAX_VALUE))))
                                         .addContainerGap())
                 );
                 contentPanelLayout.setVerticalGroup(

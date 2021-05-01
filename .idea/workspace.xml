@@ -5,31 +5,30 @@
       <artifact name="ElectronicnvoiceAssistant:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="02777398-98fb-465c-be91-e348412b1921" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="02777398-98fb-465c-be91-e348412b1921" name="默认更改列表" comment="修改字体bug">
+      <change afterPath="$PROJECT_DIR$/.idea/ElectronicInvoiceAssistant.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/apache/pdfbox/pdmodel/font/FontMapperImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/ElectronicnvoiceAssistant-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/MainFrame$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/apache/pdfbox/pdmodel/font/FontMapperImpl$DefaultFontProvider.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/apache/pdfbox/pdmodel/font/FontMapperImpl$FontMatch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/apache/pdfbox/pdmodel/font/FontMapperImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ElectronicnvoiceAssistant.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MainFrame.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainFrame.jfd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FileFiliter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileFiliter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Get.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Get.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/JudgeSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/JudgeSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ElectronicnvoiceAssistant.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainFrame$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainFrame$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainFrame$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainFrame$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainFrame$6.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MainFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PDF2png.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PDF2png.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PrintWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PrintWord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,38 +57,6 @@
   <component name="FavoritesManager">
     <favorites_list name="ElectronicnvoiceAssistant" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="1" column="3" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MainFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5346">
-              <caret line="249" column="64" selection-start-line="249" selection-start-column="64" selection-end-line="249" selection-end-column="64" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1609318540000" expanded="true" signature="4456:12899" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
-                <marker date="1609318540000" expanded="false" signature="12911:13536" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MainFrame.jfd">
-          <provider selected="true" editor-type-id="JFormDesigner" />
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -101,19 +68,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.15/pdfbox-2.0.15-sources.jar!/org/apache/pdfbox/pdmodel/font/FontMapperImpl.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/2.0.15/pdfbox-2.0.15-sources.jar!/org/apache/pdfbox/pdmodel/DefaultResourceCache.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainFrame.jfd" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -163,35 +127,32 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="问题" />
     <property name="project.structure.proportion" value="0.15234375" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="shared-indexes" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="ReaderModeSettings">
+    <option name="enabled" value="false" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ElectronicInvoiceAssistant\lib" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.Main">
     <configuration name="FileFiliter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FileFiliter" />
       <module name="ElectronicnvoiceAssistant" />
@@ -200,8 +161,10 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ElectronicnvoiceAssistant" />
+      <module name="ElectronicInvoiceAssistant" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -220,59 +183,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.FileFiliter" />
-        <item itemvalue="Application.test" />
-        <item itemvalue="Application.T" />
+        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -288,6 +212,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -313,6 +238,14 @@
       <workItem from="1609318069411" duration="69000" />
       <workItem from="1609318153606" duration="208000" />
       <workItem from="1609318386956" duration="250000" />
+      <workItem from="1613379230149" duration="841000" />
+      <workItem from="1613380093187" duration="3027000" />
+      <workItem from="1613385994303" duration="921000" />
+      <workItem from="1613830792098" duration="635000" />
+      <workItem from="1613831499214" duration="16000" />
+      <workItem from="1619761274681" duration="3787000" />
+      <workItem from="1619765259526" duration="2613000" />
+      <workItem from="1619852620009" duration="8868000" />
     </task>
     <task id="LOCAL-00001" summary="完成1.0版本">
       <created>1596630722580</created>
@@ -356,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597321388520</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改字体bug">
+      <created>1619854026805</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619854026805</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -395,7 +335,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -404,29 +344,15 @@
           <value>
             <State>
               <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
     </option>
     <option name="RECENT_FILTERS">
       <map>
@@ -442,6 +368,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成1.0版本" />
@@ -450,94 +377,13 @@
     <MESSAGE value="添加作者信息" />
     <MESSAGE value="生成jar" />
     <MESSAGE value="修改readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改readme" />
+    <MESSAGE value="修改字体bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改字体bug" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="320" y="115" key="#Notifications" timestamp="1596787963388">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="115" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1596787963388" />
-    <state x="469" y="272" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1596786265176">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="469" y="272" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.900@0.0.1440.900" timestamp="1596786265176" />
-    <state x="320" y="115" key="#项目结构" timestamp="1596703690910">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="115" key="#项目结构/0.0.1440.900@0.0.1440.900" timestamp="1596703690910" />
-    <state x="475" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1596783875145">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="475" y="304" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1440.900@0.0.1440.900" timestamp="1596783875145" />
-    <state x="263" y="50" key="CommitChangelistDialog2" timestamp="1597321387973">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="263" y="50" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1597321387973" />
-    <state x="523" y="373" key="Github.CreateGistDialog" timestamp="1596630468100">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="523" y="373" key="Github.CreateGistDialog/0.0.1440.900@0.0.1440.900" timestamp="1596630468100" />
-    <state width="1398" height="255" key="GridCell.Tab.0.bottom" timestamp="1597320026879">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="255" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597320026879" />
-    <state width="1398" height="255" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596955890482" />
-    <state width="1398" height="255" key="GridCell.Tab.0.center" timestamp="1597320026877">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="255" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1597320026877" />
-    <state width="1398" height="255" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1596955890481" />
-    <state width="1398" height="255" key="GridCell.Tab.0.left" timestamp="1597320026876">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="255" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1597320026876" />
-    <state width="1398" height="255" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1596955890480" />
-    <state width="1398" height="255" key="GridCell.Tab.0.right" timestamp="1597320026878">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="255" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1597320026878" />
-    <state width="1398" height="255" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1596955890482" />
-    <state width="1398" height="255" key="GridCell.Tab.1.bottom" timestamp="1597320026882">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="255" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1597320026882" />
-    <state width="1398" height="255" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596955890485" />
-    <state width="1398" height="255" key="GridCell.Tab.1.center" timestamp="1597320026880">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="255" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1597320026880" />
-    <state width="1398" height="255" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1596955890483" />
-    <state width="1398" height="255" key="GridCell.Tab.1.left" timestamp="1597320026880">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="255" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1597320026880" />
-    <state width="1398" height="255" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1596955890483" />
-    <state width="1398" height="255" key="GridCell.Tab.1.right" timestamp="1597320026881">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="1398" height="255" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1597320026881" />
-    <state width="1398" height="255" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1596955890484" />
-    <state x="258" y="112" key="Maven.ArtifactSearchDialog" timestamp="1596384220007">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="258" y="112" key="Maven.ArtifactSearchDialog/0.0.1440.900@0.0.1440.900" timestamp="1596384220007" />
-    <state x="220" y="63" key="SettingsEditor" timestamp="1596786808690">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="220" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1596786808690" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1597321400460">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1597321400460" />
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596783918466">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="503" y="374" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1596783918466" />
-    <state x="426" y="63" key="refactoring.ChangeSignatureDialog" timestamp="1596388763775">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="426" y="63" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1596388763775" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ElectronicnvoiceAssistant.iml" />
